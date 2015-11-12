@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>JankenPon(pedra, papel ou tesoura)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<main>
+        <header>
+            <div class="page-header">
+                <h1 class="text-center">JankenPon <small>Pedra, Papel ou Tesoura</small></h1>
+            </div>
+            <ul class="nav nav-pills nav-justified">
+                  <li role="normal" class="active"><a href="#">Modo Normal</a></li>
+                  <li role="ganha"><a href="#">Modo computador sempre ganha</a></li>
+                  <li role="multi"><a href="#">Desafie outras pessoas</a></li>
+                </ul>
+        </header>
+		<section>
+			<div class="container">
+                <div class="row">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading text-center">
+                          <span class="cabecalho">Pedra, Papel ou Tesoura</span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="aviso"></div>
+                            <div class="mesa">
+                                <div class="col-xs-12 col-md-12 col-sm-12 text-center">
+                                    <h2 class="text-center">Clique sobre a carta escolhida.</h2>
+                                    <div class="col-xs-4 col-md-4 col-sm-4">
+                                        <button id="pedra" class="carta btn btn-lg round">
+                                            <i class="fa fa-hand-rock-o large-icon text-center"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-md-4 col-sm-4">
+                                        <button id="papel" class="carta btn btn-lg round">
+                                            <i class="fa fa-hand-paper-o large-icon text-center"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-4 col-md-4 col-sm-4">
+                                        <button id="tesoura" class="carta btn btn-lg round">
+                                            <i class="fa fa-hand-scissors-o large-icon text-center"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-xs-6 col-md-6 col-sm-6 text-center">
+                                    <fieldset class="text-center">
+                                        <legend>Jogador</legend>
+                                    </fieldset>
+                                    <i id="jogador1" class="jogada fa fa-spinner fa-spin"></i>
+                                </div>
+                                <div class="col-xs-6 col-md-6 col-sm-6 text-center">
+                                    <fieldset class="text-center">
+                                        <legend>Computador</legend>
+                                    </fieldset>
+                                    <i id="jogador2" class="jogada fa fa-spinner fa-spin"></i>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="placar panel-footer text-center">
+                             Placar Jogador<span id="pontos1"> 0 </span> x Computador<span id="pontos2"> 0 </span>
+                            <button id="reiniciar" class="btn">
+			                     <i class="fa fa-refresh"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</section>
+	</main>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile.custom.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

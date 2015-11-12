@@ -1,0 +1,44 @@
+.large-icon {
+  font-size: 5.0vw;
+  text-shadow: 1px 1px 1px #fff;
+  text-align: center; }
+
+.round {
+  border-radius: 50%; }
+
+.panel {
+  margin: 10px; }
+
+.carta.active {
+  text-decoration: none; }
+
+.jogada {
+  font-size: 15.0vw;
+  text-shadow: 1px 1px 1px #fff;
+  margin-bottom: 10px; }
+
+.aviso {
+  color: #3F51B5;
+  text-align: center;
+  background: lightgrey;
+  font-size: 10.0vw;
+  text-shadow: 1px 1px 1px #fff;
+  z-index: 20;
+  position: absolute; }
+
+.mesa {
+  z-index: 1;
+  position: relative; }
+
+.play {
+  font-size: 5.0vw; }
+
+.placar {
+  font-size: 1.5em;
+  font-weight: 600; }
+
+.cabecalho {
+  font-size: 1.5em;
+  font-weight: 600; }
+
+/*# sourceMappingURL=styles.css.map */
